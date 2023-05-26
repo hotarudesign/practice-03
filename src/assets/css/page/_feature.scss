@@ -1,0 +1,76 @@
+@use "./base/variable" as v;
+.feature {
+  padding: 16.2rem 0 8.2rem;
+  @include v.md {
+    padding: 10rem 0 8rem;
+  }
+  @include v.sm {
+    padding: 7rem 0;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    @include v.xl {
+      align-items: center;
+    }
+    @include v.md {
+      flex-direction: column;
+    }
+  }
+  &__body {
+    margin: 3.1rem 0 0 3.3rem;
+    @include v.xl {
+      margin: 0 0 0 3.3rem;
+    }
+    @include v.lg {
+      margin: 0;
+    }
+    @include v.md {
+      width: 100%;
+    }
+    &__ttl {
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 3;
+      text-decoration: underline v.$accentColor 10px;
+      text-underline-offset: -6px;
+      @include v.lg {
+        line-height: 1.6;
+      }
+      @include v.md {
+        text-align: center;
+      }
+    }
+    &__desc {
+      margin: 3.7rem 0 0;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2.4;
+      @include v.lg {
+        margin: 1.4rem 0 0;
+      }
+      @include v.md {
+        text-align: center;
+      }
+      @include v.sm {
+        font-size: 3.6vw;
+      }
+    }
+  }
+  &__thumb {
+    max-width: 69rem;
+    @include v.xl {
+      width: 60%;
+    }
+    @include v.lg {
+      width: 50%;
+    }
+    @include v.md {
+      margin: 2rem 0 0;
+      width: 80%;
+    }
+    @include v.sm {
+      width: 100%;
+    }
+  }
+}

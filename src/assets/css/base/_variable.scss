@@ -3,6 +3,8 @@ $md: 768px;
 $lg: 992px;
 $xl: 1200px;
 $xxl: 1440px;
+$accentColor: #99e5a5;
+$fontNoto: "Noto Sans JP", sans-serif;
 
 // 1440px以下
 @mixin xxl {

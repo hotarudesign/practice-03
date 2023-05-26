@@ -1,0 +1,68 @@
+@use "./base/variable" as v;
+.mv {
+  height: 82svh;
+  background: url(../images/webp/mv.webp) no-repeat center/cover;
+  @include v.sm {
+    background-position: 70% 100%;
+  }
+  &__inner {
+    padding: 9rem 0 0;
+    @include v.xxl {
+      padding: 3rem 0 0;
+    }
+    @include v.lg {
+      padding: 2rem 0 0;
+    }
+    @include v.sm {
+      padding: 4rem 0 0;
+    }
+  }
+  &__hero {
+    margin: 0 0 0 -15%;
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 7;
+    letter-spacing: 0.3em;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    @include v.xxl {
+      margin: 0 0 0 3%;
+      line-height: 5;
+      letter-spacing: 0.2em;
+    }
+    @include v.lg {
+      font-size: 2.4rem;
+    }
+    @include v.sm {
+      line-height: 3.5;
+    }
+    &-bg {
+      padding: 1.8rem 3.7rem 9.2rem;
+      background: #fff;
+      @include v.xxl {
+        padding: 1.8rem 3.7rem 6rem;
+      }
+      @include v.lg {
+        padding: 1.8rem 2.4rem 4rem;
+      }
+      @include v.sm {
+        padding: 1.8rem 2rem 4rem;
+      }
+      &:last-child {
+        padding: 1.8rem 3.7rem 5.7rem;
+        @include v.xxl {
+          padding: 1.8rem 3.7rem 2.5rem;
+        }
+        @include v.lg {
+          padding: 1.8rem 2.4rem 1.2rem;
+        }
+        @include v.sm {
+          padding: 1.8rem 2rem 1.2rem;
+        }
+      }
+    }
+    &-strong {
+      color: #21a937;
+    }
+  }
+}

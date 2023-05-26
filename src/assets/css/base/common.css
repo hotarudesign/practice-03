@@ -1,7 +1,5 @@
-@media not screen and (min-width: 576px) {
-  html {
-    font-size: 62.5%;
-  }
+html {
+  font-size: 62.5%;
 }
 
 img {
@@ -9,7 +7,58 @@ img {
   height: auto;
 }
 
+.body {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #444;
+}
+
 .inner {
   max-width: 1280px;
   margin: 0 auto;
+  padding: 0 5rem;
+}
+@media not screen and (min-width: 576px) {
+  .inner {
+    padding: 0 2%;
+  }
+}
+
+.sm-only {
+  display: none;
+}
+@media not screen and (min-width: 576px) {
+  .sm-only {
+    display: block;
+  }
+}
+
+.pc-only {
+  display: block;
+}
+@media not screen and (min-width: 576px) {
+  .pc-only {
+    display: none;
+  }
+}
+
+.sec-ttl {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.44;
+  text-align: center;
+  -webkit-text-decoration: underline #99e5a5 10px;
+          text-decoration: underline #99e5a5 10px;
+  text-underline-offset: -6px;
+}
+
+.contact-tel {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.contact-tel:hover, .contact-tel:focus {
+  opacity: 0.7;
+  transition: opacity 0.5s;
 }
